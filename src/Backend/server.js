@@ -30,7 +30,7 @@ contact_db.connect((err) => {
     console.log("Connected to the contact_form database.");
 });
 
-
+  
 app.post('/signup', (req, res) => {
     const sql = "INSERT INTO login (`name`,`email`,`password`) VALUES (?)";
     const values = [
